@@ -42,7 +42,6 @@ Bienvenue dans ce guide complet de **MapStruct**! Ce repo présente une comparai
 | @MappingTarget                     | Indique qu'un objet existant doit être mis à jour au lieu de créer un nouveau. |
 | @IterableMapping                   | Définit des règles de mappage pour des collections.                       |
 | @BeanMapping                       | Fournit des configurations supplémentaires pour les mappings de beans.   |
-| @InheritInverseConfiguration       | Hérite la configuration inverse d'une méthode de mappage.                |
 | @AfterMapping                      | Permet de définir une méthode de post-traitement après un mappage.       |
 | @BeforeMapping                     | Permet de définir une méthode à exécuter avant un mappage.               |
 | @ValueMapping                      | Utilisé pour mapper des valeurs entre des énumérations.                  |
