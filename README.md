@@ -30,14 +30,23 @@ Bienvenue dans ce guide complet de **MapStruct**! Ce repo présente une comparai
 ## ⚙️ Principes SOLID respectés par MapStruct
 
 - **Single Responsibility Principle (SRP)** : MapStruct génère une classe Mapper distincte, qui a pour seule responsabilité de mapper les objets.
-- **Open/Closed Principle (OCP)** : Les mappers peuvent être étendus et configurés avec des annotations pour gérer les changements sans modifier les mappers existants.
+- **Open/Closed Principle (OCP)** :(les classes doivent être ouvertes à l’extension mais fermées à la modification) Les mappers peuvent être étendus et configurés avec des annotations pour gérer les changements sans modifier les mappers existants.
 - **Dependency Inversion Principle (DIP)** : Utilisation de l'injection de dépendances avec `@Mapper` pour faciliter les tests et les extensions.
 
 ## 🔖 Annotations Importantes
 
-- `@Mapper` : Marque une interface comme Mapper pour générer les implémentations.
-- `@Mapping(source, target)` : Spécifie le mapping entre les champs source et cible.
-- `@Mappings` : Permet d'ajouter plusieurs annotations `@Mapping` sur une méthode.
+| Annotation                        | Description                                                              |
+|------------------------------------|--------------------------------------------------------------------------|
+| @Mapper                            | Déclare l'interface de mapper MapStruct.                                  |
+| @Mapping                           | Déclare les règles de mappage entre les champs des objets source et cible.|
+| @MappingTarget                     | Indique qu'un objet existant doit être mis à jour au lieu de créer un nouveau. |
+| @IterableMapping                   | Définit des règles de mappage pour des collections.                       |
+| @BeanMapping                       | Fournit des configurations supplémentaires pour les mappings de beans.   |
+| @InheritInverseConfiguration       | Hérite la configuration inverse d'une méthode de mappage.                |
+| @AfterMapping                      | Permet de définir une méthode de post-traitement après un mappage.       |
+| @BeforeMapping                     | Permet de définir une méthode à exécuter avant un mappage.               |
+| @ValueMapping                      | Utilisé pour mapper des valeurs entre des énumérations.                  |
+
 
 ## 📚 Ressources
 
