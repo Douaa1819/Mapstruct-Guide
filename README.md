@@ -50,7 +50,8 @@ Bienvenue dans ce guide complet de **MapStruct**! Ce repo présente une comparai
 ## 📚 Ressources
 
 - [Documentation Officielle de MapStruct](https://mapstruct.org/documentation/stable/reference/html/)
+- [ MapStruct](https://medium.com/@aholoujoel5/utilisation-de-mapstruct-simplifiez-le-mappage-dobjets-java-882006146be5)
+- [Guide de MapStruct](https://www.baeldung.com/mapstruct)
 - [Guide Comparatif : MapStruct vs ModelMapper](#-mapstruct-vs-modelmapper)
-
 ---
 
