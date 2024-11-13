@@ -10,9 +10,7 @@ import org.mapstruct.factory.Mappers;
 public interface UserMapper {
     UserMapper INSTANCE = Mappers.getMapper(UserMapper.class);
 
-    // Mapping pour convertir User vers UserResponseDTO
     UserResponseDTO userToUserResponseDTO(User user);
 
-    // Mapping pour convertir UserRequestDTO vers User
     User userRequestDTOToUser(UserRequestDTO userRequestDTO);
 }
