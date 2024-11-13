@@ -18,17 +18,12 @@ Bienvenue dans ce guide complet de **MapStruct**! Ce repo présente une comparai
 
 ## 🔄 Comparaison : MapStruct vs ModelMapper
 
-| Critère                  | MapStruct                                         | ModelMapper                                    |
-|--------------------------|---------------------------------------------------|------------------------------------------------|
-| **Performance**          | Très performant, car le mapping est généré au moment de la compilation. | Moins performant, car basé sur la réflexion.   |
-| **Facilité d'utilisation** | Nécessite des annotations explicites pour chaque champ, mais offre une clarté et un contrôle précis. | Plus flexible, mais peut être moins explicite, avec des mappings implicites. |
-| **Code généré**          | Génère du code source au moment de la compilation, facilitant le débogage et l'optimisation. | Pas de code source généré; utilise la réflexion dynamique. |
-| **Support des principes SOLID** | Bien adapté aux principes SOLID (SRP, OCP, DIP), avec des mappers dédiés et extensibles. | Moins aligné avec SOLID, car les mappings sont dynamiques et peuvent être plus difficiles à personnaliser. |
-| **Annotations principales** | `@Mapper`, `@Mapping`, `@Mappings`               | Peu d'annotations, repose davantage sur la configuration implicite. |
-| **Types de mapping**     | Support complet pour le mapping explicite de champs, y compris les objets imbriqués. | Mapping automatique basé sur la réflexion, supporte les objets imbriqués mais avec moins de contrôle. |
-| **Contrôle des mappings**| Contrôle fin du mapping avec des annotations pour chaque champ, facilitant les mappings complexes. | Moins de contrôle précis, plus automatisé, mais peut nécessiter des configurations spécifiques pour des cas complexes. |
-| **Courbe d'apprentissage**| Facile à apprendre pour les mappings simples, mais nécessite d’apprendre les annotations MapStruct. | Facile à configurer, mais peut devenir complexe pour des mappings plus spécifiques. |
-| **Cas d'utilisation recommandé** | Projets avec des mappings nécessitant de la performance et un contrôle explicite. | Projets avec des mappings simples ou si la réflexion dynamique est acceptable. |
+| Critère                  | MapStruct                                   | ModelMapper                                  |
+|--------------------------|---------------------------------------------|----------------------------------------------|
+| **Performance**          | Très performant (code généré à la compilation) | Moins performant (utilisation de réflexion) |
+| **Simplicité**           | Simplicité avec annotations                 | Flexibilité mais moins intuitif               |
+| **Support SOLID**        | Supporte bien SOLID (OCP, SRP)              | Moins optimisé pour SOLID                    |
+
 
 ---
 
