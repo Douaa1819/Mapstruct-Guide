@@ -40,8 +40,6 @@ Bienvenue dans ce guide complet de **MapStruct**! Ce repo présente une comparai
 | @Mapper                            | Déclare l'interface de mapper MapStruct.                                  |
 | @Mapping                           | Déclare les règles de mappage entre les champs des objets source et cible.|
 | @MappingTarget                     | Indique qu'un objet existant doit être mis à jour au lieu de créer un nouveau. |
-| @IterableMapping                   | Définit des règles de mappage pour des collections.                       |
-| @BeanMapping                       | Fournit des configurations supplémentaires pour les mappings de beans.   |
 | @AfterMapping                      | Permet de définir une méthode de post-traitement après un mappage.       |
 | @BeforeMapping                     | Permet de définir une méthode à exécuter avant un mappage.               |
 | @ValueMapping                      | Utilisé pour mapper des valeurs entre des énumérations.                  |
