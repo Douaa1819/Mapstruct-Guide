@@ -4,15 +4,15 @@ import com.mapstruct.youcode.dto.request.UserRequestDTO;
 import com.mapstruct.youcode.dto.response.UserResponseDTO;
 import com.mapstruct.youcode.model.User;
 import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;
 
-@Mapper
+@Mapper(componentModel = "spring")
 public interface UserMapper {
-    UserMapper INSTANCE = Mappers.getMapper(UserMapper.class);
 
-    // Mapping pour convertir User vers UserResponseDTO
-    UserResponseDTO userToUserResponseDTO(User user);
-
-    // Mapping pour convertir UserRequestDTO vers User
-    User userRequestDTOToUser(UserRequestDTO userRequestDTO);
+    @Mapping(target = "id", ignore = true)
+    User toUser(UserRequestDTO userRequestDTO);
+    UserResponseDTO toUserResponse(User user);
 }
+
+//    @Mapping(source = "firstName", target = "fullName")
