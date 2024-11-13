@@ -18,11 +18,11 @@ Bienvenue dans ce guide complet de **MapStruct**! Ce repo présente une comparai
 
 ## 🔄 Comparaison : MapStruct vs ModelMapper
 
-| Critère                  | MapStruct                                   | ModelMapper                                  |
+| Critère                  | MapStruct                                  | ModelMapper                                  |
 |--------------------------|---------------------------------------------|----------------------------------------------|
-| **Performance**          | Très performant (code généré à la compilation) | Moins performant (utilisation de réflexion) |
-| **Simplicité**           | Simplicité avec annotations                 | Flexibilité mais moins intuitif               |
-| **Support SOLID**        | Supporte bien SOLID (OCP, SRP)              | Moins optimisé pour SOLID                    |
+| **Mécanisme de Fonctionnement** | Génère du code au moment de la compilation pour mapper les objets, sans utiliser de réflexion. | Utilise la réflexion pour examiner les objets et mapper leurs champs à l'exécution. |
+| **Performance**          | Très performant car le code est pré-généré et optimisé. | Moins performant car la réflexion prend plus de temps et de ressources à l'exécution. |
+| **Simplicité et Maintenance** | Simplicité avec des annotations qui décrivent précisément le mapping. Le code généré est facile à déboguer et à maintenir. | La réflexion rend le code plus flexible mais parfois moins intuitif, car elle ne vérifie pas les erreurs de compilation. |
 
 
 ---
